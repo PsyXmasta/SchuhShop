@@ -1,12 +1,46 @@
-﻿namespace SchuhShop
+﻿namespace SchuhShop;
+
+
+class Product
+
 {
-    internal class Program
+
+    public int Id;
+
+    public string Name;
+
+    public double Price;
+
+}
+
+
+class Program
+{
+    static void Main()
     {
-        static void Main(string[] args)
+        List<Product> products = new List<Product>
+            {
+                new Product { Id = 1, Name = "Nike Air Max", Price = 120 },
+
+                new Product { Id = 2, Name = "Adidas Superstar", Price = 90 },
+
+                new Product { Id = 3, Name = "Puma Runner", Price = 80 }
+            };
+
+
+
+        Console.WriteLine("Produktliste:");
+
+
+
+        foreach (var p in products)
+
         {
-            Console.WriteLine("SchuhShop. Test");
-            Console.WriteLine("Git erstellt! Test");
+
+            Console.WriteLine(p.Id + ": " + p.Name + " - " + p.Price + "€");
 
         }
+
     }
+
 }

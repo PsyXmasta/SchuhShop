@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("SchuhShop. Test");
             Console.WriteLine("Git erstellt! Test");
 
         }

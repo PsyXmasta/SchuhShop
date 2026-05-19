@@ -1,46 +1,10 @@
-﻿namespace SchuhShop;
-
-
-class Product
-
+﻿namespace SchuhShop
 {
-
-    public int Id;
-
-    public string Name;
-
-    public double Price;
-
-}
-
-
-class Program
-{
-    static void Main()
+    class Program
     {
-        List<Product> products = new List<Product>
-            {
-                new Product { Id = 1, Name = "Nike Air Max", Price = 120 },
-
-                new Product { Id = 2, Name = "Adidas Superstar", Price = 90 },
-
-                new Product { Id = 3, Name = "Puma Runner", Price = 80 }
-            };
-
-
-
-        Console.WriteLine("Produktliste:");
-
-
-
-        foreach (var p in products)
-
+        static void Main(string[] args)
         {
-
-            Console.WriteLine(p.Id + ": " + p.Name + " - " + p.Price + "€");
-
+            Console.WriteLine("Willkommen im Schuh Shop!");
         }
-
     }
-
 }

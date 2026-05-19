@@ -16,13 +16,17 @@ Ich entwickle einen einfachen Schuhshop als Konsolenanwendung in C#.
 
 - Bestellung
 
- 
-## Stand Tag 1
 
-Heute habe ich:
+## Tag 1
 
-- Projekt erstellt
+Heute habe ich die Projektstruktur erstellt.
 
-- GitHub eingerichtet
+Ich habe folgende Klassen angelegt:
+- Product
+- CartItem
+- Cart
+- ShopService
 
-- erste Produkte erstellt
+Das Ziel war es, eine saubere Grundlage für die weitere Entwicklung zu schaffen.
+
+Zusätzlich habe ich das Projekt in GitHub eingerichtet und erste Commits erstellt.

@@ -1,6 +1,7 @@
-﻿namespace SchuhShop
+﻿
+namespace SchuhShop
 {
-    internal class Cart
+    public class Cart
     {
     }
 }

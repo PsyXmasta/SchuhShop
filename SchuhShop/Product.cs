@@ -1,5 +1,4 @@
-﻿
-namespace SchuhShop
+﻿namespace SchuhShop
 {
     public class Product
     {

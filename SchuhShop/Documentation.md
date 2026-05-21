@@ -6,7 +6,7 @@ Das Thema ist für mich interessant, da ich bereits in der Schuhbranche gearbeite
 
 Die Anwendung soll grundlegende Shop-Funktionen enthalten, wie das Anzeigen von Produkten und das spätere Hinzufügen in einen Warenkorb.
 
----
+------------------------------------------------------------------------------------------------------------------
 
 ## Funktionen (geplant)
 - Produkte anzeigen
@@ -16,7 +16,7 @@ Die Anwendung soll grundlegende Shop-Funktionen enthalten, wie das Anzeigen von 
 - Produkt entfernen
 - Bestellung abschließen
 
----
+------------------------------------------------------------------------------------------------------------------
 
 ## Tag 1 – Projektstart
 
@@ -40,14 +40,14 @@ Diese Klassen sind zunächst leer und dienen als Grundlage für die weitere Entwic
 ### Ziel:
 Ziel war es, eine saubere und übersichtliche Struktur zu schaffen, um später einfacher weiterarbeiten zu können.
 
----
+------------------------------------------------------------------------------------------------------------------
 
 ## Tag 2 – Produktmodell und Anzeige
 
 Am zweiten Tag habe ich mit der eigentlichen Implementierung begonnen.
 
 ### Umgesetzte Schritte:
-- Klasse `Product` definiert
+- Klasse Product definiert
 - Eigenschaften hinzugefügt:
   - Id
   - Name
@@ -72,3 +72,26 @@ Nächste Schritte
 Menü erstellen
 Benutzer-Eingaben verarbeiten
 Warenkorb implementieren
+
+------------------------------------------------------------------------------------------------------------------
+
+
+## Tag 3 – Menü und Benutzereingaben
+
+Am dritten Tag habe ich ein Menü implementiert.
+
+### Umgesetzte Schritte:
+- Menü in der Konsole erstellt
+- Benutzereingaben mit Console.ReadLine() verarbeitet
+- Switch-Case zur Steuerung der Aktionen verwendet
+- Anzeige der Produkte in eine separate Methode ausgelagert
+
+### Ergebnis:
+Der Benutzer kann jetzt über das Menü eine Aktion auswählen.
+
+### Ziel:
+Die Anwendung soll interaktiv werden und auf Eingaben des Benutzers reagieren.
+
+------------------------------------------------------------------------------------------------------------------
+
+

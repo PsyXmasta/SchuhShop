@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 
 namespace SchuhShop
@@ -7,8 +8,6 @@ namespace SchuhShop
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Willkommen im Schuh Shop!\n");
-
             List<Product> products = new List<Product>
             {
                 new Product(1, "Nike Air Max", 120),
@@ -16,11 +15,37 @@ namespace SchuhShop
                 new Product(3, "Puma Runner", 80)
             };
 
-            Console.WriteLine("Unsere Produkte:");
-
-            foreach (var product in products)
+            while (true)
             {
-                Console.WriteLine($"{product.Id}. {product.Name} - {product.Price} Euro");
+                Console.WriteLine("\n=== Schuh Shop ===");
+                Console.WriteLine("1. Produkte anzeigen");
+                Console.WriteLine("0. Exit");
+
+                Console.Write("Auswahl: ");
+                string input = Console.ReadLine();
+
+                if (input == "1")
+                {
+                    ShowProducts(products);
+                }
+                else if (input == "0")
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Falsche Eingabe.");
+                }
+            }
+        }
+
+        static void ShowProducts(List<Product> products)
+        {
+            Console.WriteLine("\n=== Produkte ===");
+
+            foreach (Product p in products)
+            {
+                Console.WriteLine(p.Id + ". " + p.Name + " - " + p.Price + "€");
             }
         }
     }

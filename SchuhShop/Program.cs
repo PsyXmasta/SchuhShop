@@ -1,8 +1,4 @@
-﻿
-using System;
-using System.Collections.Generic;
-
-namespace SchuhShop
+﻿namespace SchuhShop
 {
     class Program
     {
@@ -15,10 +11,13 @@ namespace SchuhShop
                 new Product(3, "Puma Runner", 80)
             };
 
+            Cart cart = new Cart();
+
             while (true)
             {
                 Console.WriteLine("\n=== Schuh Shop ===");
                 Console.WriteLine("1. Produkte anzeigen");
+                Console.WriteLine("2. In Warenkorb hinzufügen");
                 Console.WriteLine("0. Exit");
 
                 Console.Write("Auswahl: ");
@@ -27,6 +26,10 @@ namespace SchuhShop
                 if (input == "1")
                 {
                     ShowProducts(products);
+                }
+                else if (input == "2")
+                {
+                    AddToCart(products, cart);
                 }
                 else if (input == "0")
                 {
@@ -43,9 +46,28 @@ namespace SchuhShop
         {
             Console.WriteLine("\n=== Produkte ===");
 
-            foreach (Product p in products)
+            foreach (var p in products)
             {
-                Console.WriteLine(p.Id + ". " + p.Name + " - " + p.Price + "€");
+                Console.WriteLine($"{p.Id}. {p.Name} - {p.Price} Euro");
+            }
+        }
+
+        static void AddToCart(List<Product> products, Cart cart)
+        {
+            Console.Write("Produkt ID eingeben: ");
+
+            int id = int.Parse(Console.ReadLine());
+
+            var product = products.FirstOrDefault(p => p.Id == id);
+
+            if (product != null)
+            {
+                cart.AddProduct(product);
+                Console.WriteLine("Produkt wurde zum Warenkorb hinzugefügt.");
+            }
+            else
+            {
+                Console.WriteLine("Produkt nicht gefunden.");
             }
         }
     }

@@ -18,6 +18,8 @@
                 Console.WriteLine("\n=== Schuh Shop ===");
                 Console.WriteLine("1. Produkte anzeigen");
                 Console.WriteLine("2. In Warenkorb hinzufügen");
+                Console.WriteLine("3. Warenkorb anzeigen");
+                Console.WriteLine("4. Produkt entfernen");
                 Console.WriteLine("0. Exit");
 
                 Console.Write("Auswahl: ");
@@ -30,6 +32,16 @@
                 else if (input == "2")
                 {
                     AddToCart(products, cart);
+                }
+                else if (input == "3")
+                {
+                    cart.ShowCart();
+                }
+                else if (input == "4")
+                {
+                    Console.Write("Produkt ID zum Entfernen: ");
+                    int id = int.Parse(Console.ReadLine());
+                    cart.RemoveProduct(id);
                 }
                 else if (input == "0")
                 {

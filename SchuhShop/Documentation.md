@@ -56,25 +56,13 @@ Am zweiten Tag habe ich mit der eigentlichen Implementierung begonnen.
 - Liste von Produkten erstellt
 - Ausgabe der Produkte in der Konsole implementiert
 
-Ergebnis:
+### Ergebnis:
 Das Programm zeigt nun eine Liste von Schuhen mit Preis in der Konsole an.
-Ziel:
+
+### Ziel:
 Ziel war es, ein erstes funktionierendes Feature zu implementieren und mit objektorientierter Programmierung zu arbeiten.
 
-Probleme und Lösungen
-Problem:
-Doppelte Definition der Klasse Product
-Lösung:
-Die Klasse wurde aus Program.cs entfernt und in eine eigene Datei (Product.cs) ausgelagert.
-
-Nächste Schritte
-
-Menü erstellen
-Benutzer-Eingaben verarbeiten
-Warenkorb implementieren
-
 ------------------------------------------------------------------------------------------------------------------
-
 
 ## Tag 3 – Menü und Benutzereingaben
 
@@ -93,5 +81,42 @@ Der Benutzer kann jetzt über das Menü eine Aktion auswählen.
 Die Anwendung soll interaktiv werden und auf Eingaben des Benutzers reagieren.
 
 ------------------------------------------------------------------------------------------------------------------
+
+## Tag 4 – Warenkorb Funktion
+
+Am vierten Tag habe ich den Warenkorb implementiert.
+
+### Umgesetzte Schritte:
+- Klasse Cart erstellt
+- Klasse CartItem implementiert
+- Methode zum Hinzufügen von Produkten erstellt
+- Produkt wird anhand der ID gesucht
+
+### Ergebnis:
+Der Benutzer kann jetzt Produkte auswählen und in den Warenkorb hinzufügen.
+
+### Ziel:
+Grundlegende Shop-Logik implementieren und mehrere Klassen miteinander verbinden.
+
+------------------------------------------------------------------------------------------------------------------
+
+
+## Tag 5 – Warenkorb erweitern
+
+Am fünften Tag habe ich den Warenkorb erweitert.
+
+### Umgesetzte Schritte:
+- Anzeige des Warenkorbs implementiert
+- Möglichkeit zum Entfernen von Produkten hinzugefügt
+- Gesamtpreis berechnet
+
+### Ergebnis:
+Der Benutzer kann jetzt den Warenkorb sehen, Produkte entfernen und den Gesamtpreis erkennen.
+
+### Ziel:
+Die Kernfunktion eines Shops vollständig umsetzen.
+
+------------------------------------------------------------------------------------------------------------------
+
 
 

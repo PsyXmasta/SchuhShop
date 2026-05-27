@@ -10,7 +10,7 @@
 7. Probleme und Lösungen
 8. Technische Umsetzung
 9. Flowchart
-10. Screenshots (Platzhalter)
+10. Screenshots
 11. Fazit
 12. Quellen
 
@@ -121,7 +121,7 @@ Finalisierung:
 ### Problem 1: Doppelte Klasse Product
 Die Klasse wurde zweimal definiert.
 
-**Lösung:**
+**Lösung:**  
 Die Klasse wurde in eine separate Datei ausgelagert.
 
 ---
@@ -129,7 +129,7 @@ Die Klasse wurde in eine separate Datei ausgelagert.
 ### Problem 2: Fehlerhafte Eingaben
 Benutzer konnten falsche Werte eingeben.
 
-**Lösung:**
+**Lösung:**  
 Verwendung von `int.TryParse()` zur Validierung.
 
 ---
@@ -137,7 +137,7 @@ Verwendung von `int.TryParse()` zur Validierung.
 ### Problem 3: Produkt nicht gefunden
 Bei falscher ID wurde kein Produkt gefunden.
 
-**Lösung:**
+**Lösung:**  
 Überprüfung mit einer Suchmethode (`FirstOrDefault`).
 
 ---
@@ -152,10 +152,38 @@ Ein wichtiger Aspekt ist die Warenkorb-Logik:
 - Wenn ein Produkt bereits im Warenkorb vorhanden ist, wird die Menge erhöht
 - Die Berechnung des Gesamtpreises erfolgt über eine Methode
 
+
 Beispiel:
 
-csharp
+```csharp
 var item = Items.FirstOrDefault(i => i.Product.Id == product.Id);
+```
 
+## 9. Flowchart
+![Flowchart](diagramm.png)
+Das Diagramm zeigt den Ablauf der Anwendung.
 
+## 10. Screenshots
+![Programm Konsole](screenshot1.png)
+Die Abbildung zeigt die Ausgabe des Programms in der Konsole.
 
+![Code Beispiel](screenshot_code.png)
+Hier ist ein wichtiger Teil der Warenkorb-Logik dargestellt.
+
+## 11. Fazit
+Das Projekt erfüllt die gesetzten Ziele und funktioniert vollständig.
+Die Anwendung bietet alle geplanten Funktionen eines einfachen Shops.
+Besonders wichtig war die Umsetzung der Warenkorb-Logik sowie die Arbeit mit Klassen und Methoden.
+Ich konnte meine Kenntnisse in C# und objektorientierter Programmierung deutlich verbessern.
+
+## 12. Quellen
+
+Unterrichtsmaterialien
+Eigene Recherche
+ChatGPT (Unterstützung bei Struktur und Verständnis)
+
+## 13. Verwendete Technologien:
+- C#
+- .NET Console Application
+- Visual Studio
+- GitHub

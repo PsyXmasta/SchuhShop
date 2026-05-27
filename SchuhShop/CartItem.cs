@@ -1,4 +1,8 @@
-﻿namespace SchuhShop
+﻿using System;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace SchuhShop
 {
     public class CartItem
     {

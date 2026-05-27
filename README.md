@@ -1,108 +1,162 @@
-# \# 👟 Mini Schuhshop
+### \# 👟 Mini Schuhshop
 
-# 
+### 
 
-# Ein einfaches Konsolenprojekt in C#, das einen Schuhshop simuliert.  
+### Ein einfaches Konsolenprojekt in C#, das einen Schuhshop simuliert.
 
-# Der Benutzer kann Produkte anzeigen, in den Warenkorb legen und eine Bestellung abschließen.
+### Der Benutzer kann Produkte anzeigen, in den Warenkorb legen und eine Bestellung abschließen.
 
-# 
+### 
 
-# \---
+### \---
 
-# 
+### 
 
-# \## 📌 Funktionen
+### \## 📌 Funktionen
 
-# 
+### 
 
-# \- Anzeige der verfügbaren Produkte
+### \- Anzeige der verfügbaren Produkte
 
-# \- Hinzufügen von Produkten in den Warenkorb
+### \- Hinzufügen von Produkten in den Warenkorb
 
-# \- Anzeige des Warenkorbs
+### \- Anzeige des Warenkorbs
 
-# \- Entfernen von Produkten
+### \- Entfernen von Produkten
 
-# \- Berechnung des Gesamtpreises
+### \- Berechnung des Gesamtpreises
 
-# \- Bestellung abschließen
+### \- Bestellung abschließen
 
-# 
+### 
 
-# \---
+### \---
 
-# 
+### 
 
-# \## 🛠️ Technologien
+### \## 🛠️ Technologien
 
-# 
+### 
 
-# \- C#
+### \- C#
 
-# \- .NET (Console Application)
+### \- .NET (Console Application)
 
-# \- Objektorientierte Programmierung
+### \- Objektorientierte Programmierung
 
-# 
+### 
 
-# \---
+### \---
 
-# 
+### 
 
-# \## 🧩 Projektstruktur
+### \## 🧩 Projektstruktur
 
-# 
+### 
 
-# \- \*\*Product.cs\*\*  
+### \- \*\*Product.cs\*\*
 
-# &#x20; Enthält die Produktdaten (Id, Name, Preis)
+### &#x20; Enthält die Produktdaten (Id, Name, Preis)
 
-# 
+### 
 
-# \- \*\*CartItem.cs\*\*  
+### \- \*\*CartItem.cs\*\*
 
-# &#x20; Verbindet ein Produkt mit einer Menge
+### &#x20; Verbindet ein Produkt mit einer Menge
 
-# 
+### 
 
-# \- \*\*Cart.cs\*\*  
+### \- \*\*Cart.cs\*\*
 
-# &#x20; Verwaltet den Warenkorb und enthält die Logik
+### &#x20; Verwaltet den Warenkorb und enthält die Logik
 
-# 
+### 
 
-# \- \*\*Program.cs\*\*  
+### \- \*\*Program.cs\*\*
 
-# &#x20; Hauptprogramm und Menüführung
+### &#x20; Hauptprogramm und Menüführung
 
-# 
+### 
 
-# \---
+### \---
 
-# 
+### 
 
-# \## ▶️ Nutzung
+### \## ▶️ Nutzung
 
-# 
+### 
 
-# 1\. Programm starten  
+### 1\. Programm starten
 
-# 2\. Menüoption auswählen  
+### 2\. Menüoption auswählen
 
-# 3\. Produkte anzeigen  
+### 3\. Produkte anzeigen
 
-# 4\. Produkte in den Warenkorb hinzufügen  
+### 4\. Produkte in den Warenkorb hinzufügen
 
-# 5\. Warenkorb anzeigen oder bearbeiten  
+### 5\. Warenkorb anzeigen oder bearbeiten
 
-# 6\. Bestellung abschließen  
+### 6\. Bestellung abschließen
 
-# 
+### 
 
-# \---
+### \---
 
-# 
+### 
 
-# \## 💡 Beispielablauf
+### \## 💡 Beispielablauf
+
+### 
+
+=== Schuh Shop ===
+
+
+
+Produkte anzeigen
+
+In Warenkorb hinzufügen
+
+Warenkorb anzeigen
+
+Produkt entfernen
+
+Bestellung abschließen
+
+Exit
+
+### 
+
+### \## 🎯 Ziel des Projekts
+
+### 
+
+### Das Ziel war es, eine funktionale Konsolenanwendung zu entwickeln und dabei die Grundlagen der objektorientierten Programmierung in C# anzuwenden.
+
+### 
+
+### \---
+
+### 
+
+### \## 👨‍💻 Autor
+
+### 
+
+### Projekt im Rahmen der Umschulung zum Fachinformatiker (Anwendungsentwicklung).
+
+### 
+
+### \---
+
+### 
+
+### \## 📚 Quellen
+
+### 
+
+### \- Unterrichtsmaterialien
+
+### \- Eigene Recherche
+
+### \- Unterstützung durch ChatGPT
 

@@ -1,4 +1,6 @@
-﻿
+﻿using System;
+using System.Linq;
+
 namespace SchuhShop
 {
     public class Cart
@@ -7,11 +9,11 @@ namespace SchuhShop
 
         public void AddProduct(Product product)
         {
-            var existingItem = Items.FirstOrDefault(i => i.Product.Id == product.Id);
+            var item = Items.FirstOrDefault(i => i.Product.Id == product.Id);
 
-            if (existingItem != null)
+            if (item != null)
             {
-                existingItem.Quantity++;
+                item.Quantity++;
             }
             else
             {
@@ -26,6 +28,11 @@ namespace SchuhShop
             if (item != null)
             {
                 Items.Remove(item);
+                Console.WriteLine("Produkt entfernt.");
+            }
+            else
+            {
+                Console.WriteLine("Produkt nicht im Warenkorb.");
             }
         }
 
@@ -41,10 +48,12 @@ namespace SchuhShop
 
             foreach (var item in Items)
             {
-                Console.WriteLine(item.Product.Name + " x" + item.Quantity + " - " + (item.Product.Price * item.Quantity) + " Euro");
+                double total = item.Product.Price * item.Quantity;
+                Console.WriteLine($"{item.Product.Name} x{item.Quantity} - {total} Euro");
             }
 
-            Console.WriteLine("Gesamt: " + GetTotal() + " Euro");
+            Console.WriteLine("----------------------");
+            Console.WriteLine($"Gesamt: {GetTotal()} Euro");
         }
 
         public double GetTotal()

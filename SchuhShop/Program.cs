@@ -1,4 +1,7 @@
-﻿namespace SchuhShop
+﻿using System;
+using System.Linq;
+
+namespace SchuhShop
 {
     class Program
     {
@@ -20,6 +23,7 @@
                 Console.WriteLine("2. In Warenkorb hinzufügen");
                 Console.WriteLine("3. Warenkorb anzeigen");
                 Console.WriteLine("4. Produkt entfernen");
+                Console.WriteLine("5. Bestellung abschließen");
                 Console.WriteLine("0. Exit");
 
                 Console.Write("Auswahl: ");
@@ -39,9 +43,12 @@
                 }
                 else if (input == "4")
                 {
-                    Console.Write("Produkt ID zum Entfernen: ");
-                    int id = int.Parse(Console.ReadLine());
-                    cart.RemoveProduct(id);
+                    RemoveFromCart(cart);
+                }
+                else if (input == "5")
+                {
+                    cart.ShowCart();
+                    Console.WriteLine("Danke für Ihre Bestellung!");
                 }
                 else if (input == "0")
                 {
@@ -68,18 +75,37 @@
         {
             Console.Write("Produkt ID eingeben: ");
 
-            int id = int.Parse(Console.ReadLine());
-
-            var product = products.FirstOrDefault(p => p.Id == id);
-
-            if (product != null)
+            if (int.TryParse(Console.ReadLine(), out int id))
             {
-                cart.AddProduct(product);
-                Console.WriteLine("Produkt wurde zum Warenkorb hinzugefügt.");
+                var product = products.FirstOrDefault(p => p.Id == id);
+
+                if (product != null)
+                {
+                    cart.AddProduct(product);
+                    Console.WriteLine("Produkt hinzugefügt.");
+                }
+                else
+                {
+                    Console.WriteLine("Produkt nicht gefunden.");
+                }
             }
             else
             {
-                Console.WriteLine("Produkt nicht gefunden.");
+                Console.WriteLine("Ungültige Eingabe.");
+            }
+        }
+
+        static void RemoveFromCart(Cart cart)
+        {
+            Console.Write("Produkt ID zum Entfernen: ");
+
+            if (int.TryParse(Console.ReadLine(), out int id))
+            {
+                cart.RemoveProduct(id);
+            }
+            else
+            {
+                Console.WriteLine("Ungültige Eingabe.");
             }
         }
     }
